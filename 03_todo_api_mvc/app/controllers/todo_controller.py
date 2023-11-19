@@ -1,5 +1,5 @@
 from flask_restx import Resource
-from app.model.dao import TodoDAO
+from app.models.dao import TodoDAO
 from app.utils.dto import TodoDto
 
 DAO = TodoDAO()

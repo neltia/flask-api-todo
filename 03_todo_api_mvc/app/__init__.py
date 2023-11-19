@@ -1,7 +1,7 @@
 from flask import Flask
 from flask_restx import Api
 from werkzeug.middleware.proxy_fix import ProxyFix
-from app.controller.todo_controller import api as todo_api
+from app.controllers.todo_controller import api as todo_api
 
 
 def create_app():

@@ -2,7 +2,7 @@ from flask_restx import Namespace, fields
 
 
 class TodoDto:
-    api = Namespace('todos', description='user related operations')
+    api = Namespace('todo', description='user related operations')
 
     todo = api.model('Todo', {
         'id': fields.Integer(
