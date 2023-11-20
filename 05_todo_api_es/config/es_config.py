@@ -1,7 +1,6 @@
 from dotenv import load_dotenv
 import os
 from elasticsearch_dsl import connections
-from elasticsearch_dsl import Index
 from app.models.dao import Todo
 
 
