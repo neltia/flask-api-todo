@@ -36,7 +36,9 @@ class TodoService:
         try:
             todo = Todo.get(id=todo_id)
         except elasticsearch.NotFoundError:
-            api.abort(404, f"todo_id: {todo_id} doesn't exist")
+            msg = f"todo_id: {todo_id} doesn't exist"
+            res = {"status_code": 404, "result": msg}
+            api.abort(404, res)
         todo = todo.to_dict()
         todo = common.conversed_json(todo)
         return todo
