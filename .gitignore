@@ -1,0 +1,8 @@
+# cache
+__pycache__/
+
+# env
+.env
+
+# es ssl crt
+http_ca.crt
